@@ -143,6 +143,15 @@
 .container {
   width: 100%;
 }
+.mt-\[12px\] {
+  margin-top: 12px;
+}
+.mt-\[30px\] {
+  margin-top: 30px;
+}
+.mt-\[60px\] {
+  margin-top: 60px;
+}
 .box-border {
   box-sizing: border-box;
 }
@@ -247,9 +256,6 @@
 }
 .w-1\/2 {
   width: calc(1/2 * 100%);
-}
-.w-\[355px\] {
-  width: 355px;
 }
 .w-auto {
   width: auto;
@@ -812,6 +818,9 @@
 .bg-\(color\:--my-color\) {
   background-color: var(--my-color);
 }
+.bg-\[\#1C1D1D\] {
+  background-color: #1C1D1D;
+}
 .bg-\[\#5C7962\] {
   background-color: #5C7962;
 }
@@ -993,6 +1002,9 @@
 .px-\[128px\] {
   padding-inline: 128px;
 }
+.pt-\[50px\] {
+  padding-top: 50px;
+}
 .text-center {
   text-align: center;
 }
@@ -1035,9 +1047,6 @@
 .align-top {
   vertical-align: top;
 }
-.font-\[\#5C553A\] {
-  font-family: #5C553A;
-}
 .leading-\[140\%\] {
   --tw-leading: 140%;
   line-height: 140%;
@@ -1045,14 +1054,6 @@
 .leading-none {
   --tw-leading: 1;
   line-height: 1;
-}
-.font-\[14px\] {
-  --tw-font-weight: 14px;
-  font-weight: 14px;
-}
-.font-\[40px\] {
-  --tw-font-weight: 40px;
-  font-weight: 40px;
 }
 .tracking-\[3\%\] {
   --tw-tracking: 3%;
@@ -1553,6 +1554,69 @@
 .transform-view {
   transform-box: view-box;
 }
+.max-\[1024px\]\:px-\[50px\] {
+  @media (width < 1024px) {
+    padding-inline: 50px;
+  }
+}
+.max-\[768px\]\:flex {
+  @media (width < 768px) {
+    display: flex;
+  }
+}
+.max-\[768px\]\:hidden {
+  @media (width < 768px) {
+    display: none;
+  }
+}
+.max-\[768px\]\:flex-wrap {
+  @media (width < 768px) {
+    flex-wrap: wrap;
+  }
+}
+.max-\[768px\]\:justify-center {
+  @media (width < 768px) {
+    justify-content: center;
+  }
+}
+.max-\[768px\]\:gap-\[11px\] {
+  @media (width < 768px) {
+    gap: 11px;
+  }
+}
+.max-\[768px\]\:px-\[24px\] {
+  @media (width < 768px) {
+    padding-inline: 24px;
+  }
+}
+.max-\[650px\]\:text-\[8px\] {
+  @media (width < 650px) {
+    font-size: 8px;
+  }
+}
+.max-\[650px\]\:text-\[16px\] {
+  @media (width < 650px) {
+    font-size: 16px;
+  }
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 100%;
+  border-radius: 0px;
+  height: 6px;
+  margin: 0px;
+  background-color: #DDD6D7;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:hover, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:hover {
+  background-color: #231F20 !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #231F20 !important;
+}
+@media (max-width: 768px) {
+  .swiper-slide {
+    width: calc(50% - 6px);
+  }
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
@@ -1651,10 +1715,6 @@
   initial-value: 0;
 }
 @property --tw-leading {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
